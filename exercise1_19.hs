@@ -1,0 +1,41 @@
+{-
+
+  Hugs> :t head
+  head :: [a] -> a
+  Hugs> :t last
+  last :: [a] -> a
+  Hugs> :t init
+  init :: [a] -> [a]
+  Hugs> :t fst
+  fst :: (a,b) -> a
+  Hugs> :t (++)
+  (++) :: [a] -> [a] -> [a]
+  Hugs> :t flip
+  flip :: (a -> b -> c) -> b -> a -> c
+  Hugs> :t flip (++)
+  flip (++) :: [a] -> [a] -> [a]
+
+  Hugs> head [1,2,3]
+  1
+  Hugs> head "abc"
+  'a'
+  Hugs> last "abc"
+  'c'
+  Hugs> last [1,2,3]
+  3
+  Hugs> init "abc"
+  "ab"
+  Hugs> init [1,2,3]
+  [1,2]
+  Hugs> fst (1, 2)
+  1
+  Hugs> (++) "a" "b"
+  "ab"
+  Hugs> (++) [1] [2]
+  [1,2]
+  Hugs> flip (/) 3 6
+  2.0
+  Hugs> flip (++) "a" "b"
+  "ba"
+
+-}
