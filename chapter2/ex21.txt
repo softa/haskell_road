@@ -1,0 +1,43 @@
+{-
+
+truth_table1 (Boolean -> Boolean) -> [Boolean]
+truth_table1 f = [] 
+
+truth_table1 (\p -> p)
+
+
+truth_table2 (Boolean -> Boolean -> Boolean) -> [Boolean]
+truth_table2 f = [] 
+
+-}
+1.
+*Main> (\p q -> p || q ==> p) True True    
+True
+*Main> (\p q -> p || q ==> p) True False
+True
+*Main> (\p q -> p || q ==> p) False True
+False
+*Main> (\p q -> p || q ==> p) False False
+True
+
+2. 16
+
+3. 
+  1. VVVV
+         
+
+(¬) True = False
+(¬) False = True
+
+True ∨ x = True
+False ∨ x = x
+
+True → x = x
+False → x = True
+
+True ↔ x = x
+False ↔ x = (¬) x
+
+True ⊕ x = (¬) x
+False ⊕ x = x
+
